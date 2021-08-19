@@ -1,0 +1,88 @@
+@media only screen and (min-width: 1360px) {
+
+    #general {
+        color:$negro;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+        line-height: 26.4px;
+        }
+    main.mainIndex {
+        background-image: url(../images/iconobackground.png);
+        background-repeat: no-repeat;
+        background-size: 90em;
+        background-position-x: 0px;
+        background-position-y: 0px;
+
+       .main__title {
+           span {
+               font-weight: normal;
+           }
+       }
+
+        div.main__container {
+        width: 90%;
+            ul.main__cards{
+                display: flex;
+                flex-direction: row;
+                background-color: white;
+                border-radius: 20px;
+                list-style-type: none;
+                justify-content: flex-start;
+                align-items: center;
+        
+                li.main__cards__images {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    background-color: white;
+                    border-radius: 20px;
+                    justify-content: center;
+                    align-content: center;
+                    filter: blur(2px);
+                    filter: grayscale(100);
+        
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+        
+                li.main__cards__images:hover {
+                    animation-name: cardsColor;
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+                }
+        
+                @keyframes cardsColor {
+                    from {filter: blur(2px);}
+                    to {filter: blur(0px);}
+                } 
+            }
+        }
+    }
+    .servicios {
+        }    
+
+    .servicios__boxServicios {
+    }
+
+    .servicios__boxEncargar {
+    }
+
+    .servicios__boxCategorias {
+
+    }  
+    footer.pageServicios__footer {
+        position: static;
+    }  
+    footer {
+        position: fixed;
+        bottom: 0;
+    }  
+    textarea {
+        border-radius: 25px;
+    }
+}

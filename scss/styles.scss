@@ -1,0 +1,228 @@
+/*-Variables-*/
+$negro: color black;
+$gris: color rgb(122, 122, 122);
+$blanco: color white;
+
+/*-Imports SCSS-*/
+@import "content";
+@import "pages";
+@import "mediaqueries300";
+@import "mediaqueries360";
+@import "mediaqueries460";
+@import "mediaqueries520";
+@import "mediaqueries600";
+@import "mediaqueries920";
+@import "mediaqueries1360";
+
+/*--Main SCSS---*/
+*   {
+    margin: 0;
+    padding: 0;
+}
+a {
+    font-family: Raleway !important; 
+    text-decoration: none;
+}
+a:hover {
+    font-family: Raleway !important; 
+    font-weight: normal !important;
+    background-color: rgb(41, 41, 41);
+    animation-name: aColor;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    border-radius: 35px; 
+}
+@keyframes aColor {
+    from {
+        filter: opacity(0%)}
+    to {
+        filter: opacity(100%);
+        color: $blanco;
+        background-color: rgb(41, 41, 41);
+    }
+}
+
+#general {
+    padding: 60px;
+    padding-top: 50px;
+    color:$negro;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    }
+
+body {
+    color:$negro;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}      
+
+
+/*-Secciones-*/
+main.mainIndex {
+    background-image: url(../images/iconobackground.png);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    
+    .main__title {
+        width: 100%;
+    }
+    .main__container {
+
+        width: 80%;
+        position: relative;
+        left: 5.5em;
+        
+        ul.main__cards{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 20px;
+            list-style-type: none;
+            align-items: center;
+            height: 500px;
+
+            li.main__cards__images {
+                display: flex;
+                flex-direction: row-reverse;
+                background-color: white;
+                border-radius: 20px;
+                justify-content: center;
+                align-content: center;
+                filter: blur(2px);
+                filter: grayscale(100);
+
+                a {
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+
+            li.main__cards__images:hover {
+                animation-name: cardsColor;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+
+            @keyframes cardsColor {
+                from {filter: blur(2px);}
+                to {filter: blur(0px);}
+            } 
+        }
+    }
+}
+section.section {
+    color: $negro;
+    
+
+        #section__video {
+            display: inline;
+            float: right;
+            border-radius: 20px;
+            width: 100%;
+            height: 350px; 
+            transform: translate(37em,-12em);
+            margin: 0;
+            top: 100px;
+            filter: grayscale(100);
+        }
+        #section__video:hover{
+            animation-fill-mode: both;
+            animation-name: multimedia;
+            animation-duration: 2s;
+        }
+        
+        #section__map {
+            border-radius: 20px;
+            width: 360px; 
+            height: 350px;
+            float: left;
+            opacity: 70%;
+            filter:drop-shadow(2px 2px 8px  grey);
+            transform: translate(-8em,13em);
+            animation-name: multimedia;
+            animation-duration: 0.8s;
+            filter: blur(6px);
+            filter: grayscale(100);   
+        }
+        #section__map:hover{
+            animation-fill-mode: both;
+            animation-name: multimedia2;
+            animation-duration: 2s;
+        }
+        @keyframes multimedia {
+            from {filter: grayscale(100);}
+            to {filter: grayscale(0);}
+        }
+        @keyframes multimedia2 {
+            from {filter: grayscale(100);}
+            to {filter: grayscale(0);}
+        }
+    
+}
+.servicios {
+    margin: 0;
+    background-image: url(../images/backgroundservicios.jpg);
+    background-size: 1500px;
+    background-position: bottom;  
+    }    
+        
+.contacto {
+    color: $blanco;
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+
+    h2.contacto__title{
+        color: $blanco;
+        margin: 0;
+    }
+    h3{
+        color: $blanco;
+        background-color: black;
+        margin: 0;
+    }
+  
+}
+footer {
+    display: inline;
+    color: $negro;
+    margin-top: 0px;
+    background: rgb(255, 255, 255);
+    height: 40px;
+    position: static;
+
+    ul.iconosSocialMedia {
+        li{
+            display: inline;
+            float: right;
+            position: relative;
+            right: 100px;
+            padding-left: 25px;
+            padding-bottom: 5px;
+            }
+    }
+}
+.iconosSocialMedia1:hover {
+    background-color: rgb(250, 42, 42);
+}
+.iconosSocialMedia2:hover {
+    background-color: rgb(255, 255, 83);
+}
+.iconosSocialMedia3:hover {
+    background-color: rgb(70, 70, 253);
+}
+.iconosSocialMedia4:hover {
+    background-color: rgb(42, 226, 42);
+}
+

@@ -1,0 +1,415 @@
+/*-Variables-*/
+$negro:  black;
+$gris:  rgb(122, 122, 122);
+$blanco:  white;
+
+/*-Fonts/Colors-*/
+h1  {
+    color: $negro;
+    font-family: Raleway;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 40px;
+    word-spacing: 100px;
+    letter-spacing: 100px;
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 40px;
+    animation-name: muevase;
+    animation-duration: 4s;
+} 
+@keyframes muevase {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+
+}
+/*
+.servicios__title {
+    color: white;
+}
+*/
+h2 {
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height:40px;
+    letter-spacing: 50px;
+    word-spacing: 50px;
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h3 {
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 15.4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.pageContacto__label__h3 {
+    text-align: left;
+    font-weight: bolder;
+    letter-spacing: 5px ;
+}
+h4 {
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 15.4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+p   {
+    font-family:Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: lighter;
+    font-weight: 400;
+    line-height: 20px;
+} 
+p.section__text {
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 10px;
+    width: 400px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+p.pageContacto__text {
+    display: inline-block;
+    width: 400px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+pre  { 
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px
+}
+.contacto__title {
+    color:$negro;    
+}
+
+.colorEspecial {
+    color: $gris;
+}
+
+/*Buttons/
+/*--Links--*/
+.contacto__buttonLink {
+        color: $negro;
+        display: unset;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        margin-left: 10px;
+        text-decoration: none;
+        position: relative;
+        bottom: 0px;
+        top: 15px;
+        left: 525px;
+    }
+    .contacto__buttonLink:hover {
+        color: $blanco;
+    }
+.servicios__buttonLink {
+        color: $blanco;
+        display: unset;
+        background-color: black;
+        border-radius: 20px;
+        padding: 10px;
+        text-decoration: none;
+        position: relative;
+        top: 30px;
+        left: 550px;
+        align-self: center;
+    }
+#section__buttonLink {
+        color: $blanco;
+        display: unset;
+        background-color: black;
+        border-radius: 20px;
+        padding: 10px;
+        margin-left: 10px;
+        text-decoration: none;
+        position: relative;
+        top: 40px;
+        left: 0px;
+}
+
+/*-Definiciones-*/
+fieldset {
+    padding: 5px 5px 5px 40px;
+    height: 50px;
+    width: 40%;
+}
+/*-Boxes-*/
+/*--Lists--*/
+ul {
+    list-style-type: none;
+}
+.servicios__boxOfBoxes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(4em);
+    padding: 0;
+    margin: 0;
+    width: 90%;
+
+        .servicios__boxServicios {
+                    display: inline-block;
+                    text-align: center;
+                    width: 300px;
+                    height: 300px;
+                    background-color: white;
+                    border-radius: 50px;
+                    background-image: url(../images/graphic-design.png);
+                    background-repeat: no-repeat;
+                    background-size: 50px;
+                    background-position-x: 125px;
+                    background-position-y: 210px;
+                    position: relative;
+                    filter:drop-shadow(1px 1px 1px  rgb(226, 226, 226));
+            
+                    ul{
+                        list-style: none;
+                        color: $negro;
+                        font-size: 12pt;
+                        padding: 10px;
+            
+                        li{
+                            list-style: none;
+                            color: $negro;
+                            padding: 1px;
+                            padding-top: 10px;
+                            font-weight: lighter;
+                        }
+                    }
+                }
+        
+        .servicios__boxEncargar {
+            display: inline-block;
+            list-style: upper-roman;
+            list-style: inside;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border-radius: 50px;
+            background-image: url(../images/creativity.png);
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position-x: 125px;
+            background-position-y: 210px;
+            position: relative;
+            top: 0px;
+            filter:drop-shadow(1px 1px 1px  rgb(226, 226, 226));
+
+            ol{
+                list-style-type: upper-roman;
+                list-style-position: inside;
+                color: black;
+                font-size: 10pt;
+                padding: 10px;
+
+                li{
+                    list-style: upper-roman;
+                    list-style-position: inside;
+                    color: black;
+                    padding: 1px;
+                    padding-top: 5px;
+                    font-weight: lighter;
+                }
+            }
+        }
+
+        .servicios__boxCategorias {
+            display: inline-block;
+            transform: translate(0,0);
+            top: 0px;
+            list-style: upper-roman;
+            list-style: inside;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border-radius: 50px;
+            background-image: url(../images/layers.png);
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position-x: 125px;
+            background-position-y: 210px;
+            line-height: 15px;
+            filter:drop-shadow(1px 1px 1px  rgb(226, 226, 226));
+
+            ul{
+                list-style-type: upper-roman;
+                list-style-position: inside;
+                color: black;
+                font-size: 8pt;
+                padding: 10px;
+                padding-top: 15px;
+
+                li{
+                    list-style: upper-roman;
+                    list-style-position: inside;
+                    color: black;
+                    padding: 1px;
+                    padding-top: 10px;
+                    font-weight: lighter;
+
+                    ol{
+                        list-style: upper-roman;
+                        list-style-position: inside;
+                        color: black;
+                        padding: 1px;
+                        padding-top: 2px;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+}            
+        .pageServicios__boxServicios {
+            display: inline-block;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            margin-left: 20px;
+            background-color: white;
+            border-radius: 50px;
+            background-image: url(../images/graphic-design.png);
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position-x: 125px;
+            background-position-y: 210px;
+            position: relative;
+            filter:drop-shadow(1px 1px 1px  rgb(226, 226, 226));
+    
+            ul{
+                list-style: none;
+                color: $negro;
+                font-size: 12pt;
+                padding: 10px;
+    
+                li{
+                    list-style: none;
+                    color: $negro;
+                    padding: 1px;
+                    padding-top: 10px;
+                    font-weight: lighter;
+                }
+            }
+        }
+
+.pageServicios__boxEncargar {
+    display: inline-block;
+    list-style: upper-roman;
+    list-style: inside;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 50px;
+    background-image: url(../images/creativity.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 125px;
+    background-position-y: 210px;
+    position: relative;
+    top: 0px;
+    filter:drop-shadow(1px 1px 1px  rgb(226, 226, 226));
+
+    ol{
+        list-style-type: upper-roman;
+        list-style-position: inside;
+        color: black;
+        font-size: 10pt;
+        padding: 10px;
+
+        li{
+            list-style: upper-roman;
+            list-style-position: inside;
+            color: black;
+            padding: 1px;
+            padding-top: 5px;
+            font-weight: lighter;
+        }
+    }
+}
+
+.pageServicios__boxCategorias {
+    position: relative;
+    right: 10px;
+    top: 0px;
+    list-style: upper-roman;
+    list-style: inside;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 50px;
+    background-image: url(../images/layers.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 125px;
+    background-position-y: 210px;
+    line-height: 15px;
+    display: inline-block;
+    filter:drop-shadow(1px 1px 1px  rgb(226, 226, 226));
+
+    ul{
+        list-style-type: upper-roman;
+        list-style-position: inside;
+        color: black;
+        font-size: 8pt;
+        padding: 10px;
+        padding-top: 15px;
+
+        li{
+            list-style: upper-roman;
+            list-style-position: inside;
+            color: black;
+            padding: 1px;
+            padding-top: 10px;
+            font-weight: lighter;
+
+            ol{
+                list-style: upper-roman;
+                list-style-position: inside;
+                color: black;
+                padding: 1px;
+                padding-top: 2px;
+                font-weight: lighter;
+            }
+        }
+    }
+}                                                     
+
+
+

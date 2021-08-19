@@ -1,0 +1,223 @@
+/*-Variables-*/
+$negro:  black;
+$gris:  rgb(122, 122, 122);
+$blanco:  white;
+
+
+/*--Servicios--*/
+.pageServicios {
+
+    .pageServicios__table {
+        display: none;
+    }
+    .pageServicios__modal {
+        button.pageServicios__modal__button {
+            position: absolute;
+            margin:10px 0 10px 450px;
+        }
+        table.pageServicios__modal__table {
+            width: 90%;
+            height: 200px;
+            background-color: white;
+            position: relative; 
+            color: $negro;
+
+            th.pageServicios__modal__th {
+                font-variant: small-caps;
+                background-color: gray;
+                color: $blanco;
+            }
+        
+            td.pageServicios__modal__td {
+                padding: 15px;
+                font-weight: lighter;
+            }
+        }    
+    }
+    footer.pageServicios__footer {
+        position: static;
+        bottom: 0;
+    }  
+}  
+/*--SobreNosotros--*/
+.pageSobreNosotros {
+
+        .pageSobreNosotros__boxProfesiones{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            width: 250px;
+            border: solid white;
+            border-radius: 20px;    
+            filter:drop-shadow(1px 1px 1px  $gris);
+
+            ul{
+                justify-content: center;
+                text-align: left;
+                list-style-type: none;
+        
+                li{
+                    color: $negro;
+                    padding: 20px;
+        
+                    img{
+                        position: relative;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }  
+   
+        .pageSobreNosotros__boxEstudios{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: stretch;
+            align-items: center;
+            text-align: right;
+            background-color: white;
+            padding: 20px;
+            width: 250px;
+            border: solid white;
+            border-radius: 20px;
+            filter:drop-shadow(1px 1px 1px  rgb(163, 163, 163));
+        
+            ol{
+                list-style-type: upper-roman;
+                padding: 20px;
+                text-align: left;
+        
+                li{
+                    color: $negro;
+                    padding: 10px;
+                }
+            }
+        }
+        .pageSobreNosotros__boxUbicaciones{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 250px;
+            background-color: white;
+            border: solid white;
+            border-radius: 20px;
+            filter:drop-shadow(1px 1px 1px  $gris);
+        
+            ul{
+                justify-content: center;
+                align-self: center;
+                text-align: left;
+                
+                li{
+                    color: $negro;
+                    line-height: 15px;
+                    padding: 30px;
+        
+                    ol{
+                        color: $gris;
+                        word-spacing: 3px;
+                        line-height: 20px;
+                        padding-top: 10px;
+                        font-weight: bold;
+                        list-style-position: outside;
+                        font-size: 10pt;
+                    }
+                }
+            }
+        }
+        #pageSobreNosotros__flexbox {
+            display: flex;
+            border-radius: 20px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 50px 0 50px 0;
+            height: max-content;
+            background-repeat: no-repeat;
+
+            .pageSobreNosotros__flexbox__img1 {
+                width: 280px;
+                position: relative;
+                border-radius: 20px;
+            }
+            .pageSobreNosotros__flexbox__img2 {
+                position: relative;
+                width: 240px;
+                height: 50px;
+                border-radius: 20px;
+                background-color: black;
+            }
+            .pageSobreNosotros__flexbox__img3 {
+                width: 280px;
+                position: relative;
+                float: right;
+                border-radius: 20px;
+            }
+            
+        }
+    
+}
+/*--Galería--*/
+.galeriaCarouselQueries{
+    display: none;
+}
+.carousel-control-prev {
+    position: absolute;
+    background-color: black;
+    height: 5em !important;
+    width: 5em !important;
+    border-radius: 25px;
+    filter: opacity(0.5);
+}
+.carousel-control-next {
+    position: absolute;
+    background-color: black;
+    height: 5em !important;
+    width: 5em !important;
+    border-radius: 25px;
+}
+/*--Contacto--*/
+.backgroundContacto {
+    background-image: url(../images/backgroundcontacto.jpg);
+    background-repeat: no-repeat;
+    backdrop-filter: saturate(20%);
+        
+    .pageContacto__title{
+        margin-top: 0.5em;
+    }
+    .pageContacto__select {
+        margin-top: 40px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        padding: 10px;
+    
+        .pageContacto__select__option {
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+        }
+    }
+    img.pageContacto__img {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 220px;
+        right: 50px;
+        border-radius: 20px;
+    }
+    img.pageContacto__img2 {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 925px;
+        right: 50px;
+        border-radius: 20px;
+    }
+}

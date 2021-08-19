@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"  content="form, contacto, servicio">
+    <meta name="description" content="Página destinada al contacto entre el cliente y nosotros">
+    <title>Contacto - Mantis Producciones</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body class="backgroundContacto">
+<!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/logo.png" width="150px" height="50px" class="d-inline-block align-top" alt="logo">
+          </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link font-weight-light" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-light" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-light" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-light" href="quienes_somos.html">Sobre Nosotros</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle font-weight-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Galería
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item btn-dark" href="galeria.html">Animaciones</a>
+                <a class="dropdown-item btn-dark" href="galeria.html">Diseños</a>
+                <a class="dropdown-item btn-dark" href="galeria.html">Otros</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<!--Main-->
+<main class="container pageContacto">   
+        <h1 class="pageContacto__title">Contacto</h1>
+        <!--Form-->
+        <form action="#">
+            <fieldset style="border-radius: 20px;">
+                <legend class="colorEspecial">
+                    "Ya soy cliente"
+                </legend>
+                  <p>He contratado servicios anteriormente mediante la plataforma</p>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset style="border-radius: 20px;">
+                <legend class="colorEspecial">
+                    "Quiero contratar un servicio"
+                </legend>
+                  <p>Ya conozco la página y tomé la decisión de ordenar un servicio</p>
+            </fieldset> 
+            <br>
+            <br>
+            <fieldset style="border-radius: 20px;">
+                <legend class="colorEspecial">
+                    "Es la primera vez que entro a esta página"
+                </legend>
+                  <p>Me interesa su producto pero tengo dudas al respecto de lo que necesito</p>
+            </fieldset>    
+            <br>
+            <br> 
+        <!--Select-->        
+            <select class="pageContacto__select" name="talles">
+                <option class="pageContacto__select__option" value="cliente">
+                    Ya soy cliente
+                </option>
+                <option class="pageContacto__select__option"  value="servicio">
+                    Quiero contratar un servicio
+                </option>
+                <option class="pageContacto__select__option"  value="conocer">
+                    Es la primera vez que entro a esta página
+                </option>
+            </select>           
+            <br>
+            <br>
+        <!--Label-->
+            <label for="nombre">
+                <h3 class="pageContacto__label__h3">
+                    Identificación
+                </h3>
+            </label>
+            <div class="container">
+                <p class="lead pageContacto__text ">
+                    Ingrese sus datos para que podamos responderle
+                </p>
+        <!--Form/Input-->
+                <form action="#">
+                    <div class="form-group">
+                        <label for="email">
+                            Nombre:
+                        </label>
+                        <input type="email" class="form-control w-25 pageContacto__input" id="email" placeholder="Ingrese su nombre" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input type="email" class="form-control w-25 pageContacto__input" id="email" placeholder="Ingrese su email aquí" name="email">
+                    </div>
+                    <button type="submit" class="btn btn-dark">
+                                Ingresar
+                    </button>
+                </form>
+            </div>
+            <br>
+        <!--RadioSelect-->
+            <label for="tipodeconsulta">
+                <h3 class="pageContacto__label__h3">
+                    Tipo de consulta
+                </h3>
+            </label>
+            <div></div>
+                Ediciones
+            <input type="radio" name=tipodeconsulta value="Ediciones">
+            <div></div>
+                Diseño Gráfico
+            <input type="radio" name=tipodeconsulta value="Diseño Gráfico">
+            <div></div>
+                Animaciones
+            <input type="radio" name="tipodeconsulta" value="Animaciones">
+            <div></div>
+        <br>
+        <!--TextArea-->
+            <label for="consulta">
+                <h3 class="pageContacto__label__h3">
+                    Su consulta
+                </h3>
+                <textarea  cols="60" rows="8" placeholder="Escriba su consulta aquí" name=consulta id=consulta>
+                </textarea>
+            </label>
+           
+            <br>
+        <!--Checkbox-->
+            <div class="btn-dark rounded w-25 pageContacto__input">
+                <input type="checkbox" name="acepta" value="1">Acepta términos y condiciones
+            </div>
+            
+        <br>
+        <br>
+        <!--Input-->
+            <input class="btn-dark rounded" type="submit" value="Enviar consulta">
+            <input class="btn-dark rounded" type="reset" value="Limpiar lo escrito">
+            
+        </form>
+        <hr>
+    <!--Img-->
+        <img src="../images/fotocontacto1.jpg" class="pageContacto__img" alt="posterDiseñoGraficoSport">
+        <img src="../images/fotocontacto2.jpg" class="pageContacto__img2" alt="posterDiseñoGraficoSport">
+    </main>
+<!--Footer-->
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-static">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logo.png" width="150px" height="50px" class="d-inline-block align-top" alt="logo">
+          </a>
+          <ul class="d-inline-flex pr-3 pt-3">
+            <li>
+              <a href="#" class="pr-3 iconosSocialMedia1"> <img src="../images/google-plus.png" width= 20px height= 20px alt="GoogleIcono"></a>
+            </li>
+            <li>
+              <a href="#" class="pr-3 iconosSocialMedia2"><img src="../images/instagram.png" width= 20px height= 20px alt="FacebookIcono"></a>
+            </li>
+            <li >
+              <a href="#" class="pr-3 iconosSocialMedia3"><img src="../images/facebook-circular-logo.png" width= 20px height= 20px alt="FacebookIcono"></a>
+            </li>
+            <li>
+                <a href="#" class="pr-3 iconosSocialMedia4"><img src="../images/whatsapp.png" width= 20px height= 20px alt="WhatsappIcono"></a>
+            </li>
+          </ul>
+      </nav>  
+    </footer>
+<!--Scripts-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
